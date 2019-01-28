@@ -1,0 +1,65 @@
+/*
+    base
+*/
+
+@font-face {
+    font-family: 'Calibri';
+    src: url('font/Calibri-Bold.woff2') format('woff2'),
+        url('font/Calibri-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Calibri';
+    src: url('font/Calibri.woff2') format('woff2'),
+        url('font/Calibri.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: "Calibri", "Arial", sans-serif;
+    font-weight: 400;
+    background-color: black;
+    font-style: normal;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    overflow-wrap: break-word;
+    word-wrap: break-word; //text-shadow: rgba(0,0,0,0.2) 0.01em 0.01em 0.01em !important;
+}
+
+* {
+    box-sizing: border-box;
+    outline: none;
+    ul {
+        padding: 0 !important;
+        li {
+            list-style: none;
+        }
+    }
+}
+
+h2{
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+button {
+    border: none;
+    background: transparent;
+}
+a{
+    color: #4A4A4A;
+}
+a:hover{
+	cursor: pointer;
+    text-decoration: none;
+}
+a:visited,a:focus{
+	text-decoration: none;
+}

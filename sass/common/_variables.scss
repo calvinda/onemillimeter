@@ -1,0 +1,77 @@
+/*
+    variables
+*/
+
+// =========================================
+// RWD 斷點
+// =========================================
+
+//@media (--variable){}
+// @custom-media --mobile (max-width: 767px);
+// @custom-media --pad (768px 991px);
+// @custom-media --desktop (992px 1199px);
+// @custom-media --l-desktop (min-width: 1200px);
+@custom-media --SE (max-width: 320px );
+@custom-media --mobile (max-width: 767px );
+@custom-media --pad (min-width: 768px) and (max-width:991px);
+@custom-media --desktop (min-width: 992px) and (max-width:1199px);
+@custom-media --l-desktop (min-width: 1200px);
+
+
+
+// =========================================
+// 顏色
+// =========================================
+
+// 主要顏色
+$primary-color:#E24B68;
+
+
+// =========================================
+// UI主要按鈕樣式
+// =========================================
+
+$link: #E24B68; // 連結
+
+$primary: #fff;
+$primary-bg: #E24B68;
+$primary-border: #E24B68;
+$primary-darken: #b12a45; // 紅框預設按鈕
+
+$default: #4A4A4A;
+$default-bg: transparent;
+$default-border: #4A4A4A;
+$default-darken: #4A4A4A; // 灰框按鈕
+
+$info: white;
+$info-bg: transparent;
+$info-border: white;
+$info-darken: white;
+
+$info-light: #3B3B3B;
+$info-light-bg: #DDDDDD;
+$info-light-border: #DDDDDD;
+$info-light-darken: #AAAAAA;
+
+$inverse: #ffffff;
+$inverse-bg: #3B3B3B;
+$inverse-border: #3B3B3B;
+$inverse-darken: #1F1F1F;
+
+$warning: #C82639; // 白框按鈕
+$danger: #C82639;
+$success: #C82639;
+
+// =========================================
+// Label 顏色
+// =========================================
+
+
+
+// =========================================
+// 分隔線顏色
+// =========================================
+
+$line-color-lighter:#cccccc;
+$line-color:#C6C6C6;
+$line-color-darken:#bababa;

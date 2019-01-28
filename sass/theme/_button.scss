@@ -1,0 +1,695 @@
+// =========================================
+// UI主要按鈕樣式
+// =========================================
+.btn {
+    border: 1px solid;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.3;
+    border-radius: 20px;
+    padding: 3px 15px;
+    border-radius: 5px;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -webkit-transition: border 0.25s linear, color 0.25s linear, background-color 0.25s linear;
+    transition: border 0.25s linear, color 0.25s linear, background-color 0.25s linear;
+    &:focus,
+    &:hover {
+        outline: none;
+        color: #ffffff;
+    }
+    &.active,
+    &:active {
+        outline: none;
+        box-shadow: none;
+    }
+    &:focus:active {
+        outline: none;
+    }
+}
+
+.btn.disabled,
+.btn[disabled],
+fieldset[disabled] .btn {
+    background-color: #bdc3c7;
+    color: rgba(255, 255, 255, 0.75);
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    cursor: not-allowed;
+}
+
+.btn [class^="fui-"] {
+    margin: 0 1px;
+    position: relative;
+    line-height: 1;
+    top: 1px;
+}
+
+.btn-xs.btn [class^="fui-"] {
+    font-size: 11px;
+    top: 0;
+}
+
+.btn-hg.btn [class^="fui-"] {
+    top: 2px;
+}
+
+// =======================================================
+// 紅框線按鈕
+// =======================================================
+.btn-default {
+    color: $default;
+    background-color: $default-bg;
+    border-color: $default-border;
+}
+
+.btn-default.active,
+.btn-default.hover,
+.btn-default:active,
+.btn-default:focus,
+.btn-default:hover,
+.btn-default:active:focus,
+.open>.dropdown-toggle.btn-default {
+    color: $default-darken;
+    background-color: $default-bg;
+    border-color: $default-darken;
+}
+
+.btn-default.active,
+.btn-default:active,
+.open>.dropdown-toggle.btn-default {
+    background: $default-bg;
+    border-color: $default-border;
+}
+
+.btn-default.disabled,
+.btn-default.disabled.active,
+.btn-default.disabled.hover,
+.btn-default.disabled:active,
+.btn-default.disabled:focus,
+.btn-default.disabled:hover,
+.btn-default[disabled],
+.btn-default[disabled].active,
+.btn-default[disabled].hover,
+.btn-default[disabled]:active,
+.btn-default[disabled]:focus,
+.btn-default[disabled]:hover,
+fieldset[disabled] .btn-default,
+fieldset[disabled] .btn-default.active,
+fieldset[disabled] .btn-default.hover,
+fieldset[disabled] .btn-default:active,
+fieldset[disabled] .btn-default:focus,
+fieldset[disabled] .btn-default:hover {
+    background-color: $default-bg;
+    border-color: $default-border;
+}
+
+.btn-default .badge {
+    color: $default;
+    background-color: $default-bg;
+}
+
+// =======================================================
+// 主紅色底按鈕
+// =======================================================
+.btn-primary {
+    color: $primary;
+    background-color: $primary-bg;
+    border: 1px solid $primary-bg;
+}
+
+.btn-primary.active,
+.btn-primary.hover,
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary:hover,
+.btn-primary:active:focus,
+.open>.dropdown-toggle.btn-primary {
+    color: $primary;
+    background-color: $primary-darken;
+    border-color: $primary-darken;
+}
+
+.btn-primary.active,
+.btn-primary:active,
+.open>.dropdown-toggle.btn-primary {
+    background: $primary-darken;
+    border-color: $primary-darken;
+}
+
+.btn-primary.disabled,
+.btn-primary.disabled.active,
+.btn-primary.disabled.hover,
+.btn-primary.disabled:active,
+.btn-primary.disabled:focus,
+.btn-primary.disabled:hover,
+.btn-primary[disabled],
+.btn-primary[disabled].active,
+.btn-primary[disabled].hover,
+.btn-primary[disabled]:active,
+.btn-primary[disabled]:focus,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary,
+fieldset[disabled] .btn-primary.active,
+fieldset[disabled] .btn-primary.hover,
+fieldset[disabled] .btn-primary:active,
+fieldset[disabled] .btn-primary:focus,
+fieldset[disabled] .btn-primary:hover {
+    background-color: $primary-darken;
+    border-color: $primary-darken;
+}
+
+.btn-primary .badge {
+    color: $primary;
+    background-color: $primary-bg;
+}
+
+// =======================================================
+// 灰框線按鈕
+// =======================================================
+.btn-info {
+    color: $info;
+    background-color: $info-bg;
+}
+
+.btn-info.active,
+.btn-info.hover,
+.btn-info:active,
+.btn-info:focus,
+.btn-info:hover,
+.open>.dropdown-toggle.btn-info {
+    color: $info-darken;
+    background-color: $info-bg;
+    border-color: $info-darken;
+}
+
+.btn-info.active,
+.btn-info:active,
+.open>.dropdown-toggle.btn-info {
+    background: $info-bg;
+    border-color: $info-darken;
+}
+
+.btn-info.disabled,
+.btn-info.disabled.active,
+.btn-info.disabled.hover,
+.btn-info.disabled:active,
+.btn-info.disabled:focus,
+.btn-info.disabled:hover,
+.btn-info[disabled],
+.btn-info[disabled].active,
+.btn-info[disabled].hover,
+.btn-info[disabled]:active,
+.btn-info[disabled]:focus,
+.btn-info[disabled]:hover,
+fieldset[disabled] .btn-info,
+fieldset[disabled] .btn-info.active,
+fieldset[disabled] .btn-info.hover,
+fieldset[disabled] .btn-info:active,
+fieldset[disabled] .btn-info:focus,
+fieldset[disabled] .btn-info:hover {
+    background-color: $info-bg;
+    border-color: $info-border;
+}
+
+.btn-info .badge {
+    color: $info;
+    background-color: $info-bg;
+}
+
+// =======================================================
+// 淺灰色底按鈕
+// =======================================================
+.btn-info-light {
+    color: $info-light;
+    background-color: $info-light-bg;
+    border-color: $info-light-border;
+}
+
+.btn-info-light.active,
+.btn-info-light.hover,
+.btn-info-light:active,
+.btn-info-light:focus,
+.btn-info-light:hover,
+.open>.dropdown-toggle.btn-info-light {
+    color: $info-light-darken;
+    background-color: $info-light-bg;
+    border-color: $info-light-border;
+}
+
+.btn-info-light.active,
+.btn-info-light:active,
+.open>.dropdown-toggle.btn-info-light {
+    background: $info-light-bg;
+    border-color: $info-light-border;
+}
+
+.btn-info.active.focus,
+.btn-info.active:focus,
+.btn-info.active:hover,
+.btn-info:active.focus,
+.btn-info:active:focus,
+.btn-info:active:hover,
+.open>.dropdown-toggle.btn-info.focus,
+.open>.dropdown-toggle.btn-info:focus,
+.open>.dropdown-toggle.btn-info:hover {
+    color: $info-light;
+    background-color: $info-light-bg;
+    border-color: $info-light-border;
+}
+
+.btn-info-light.disabled,
+.btn-info-light.disabled.active,
+.btn-info-light.disabled.hover,
+.btn-info-light.disabled:active,
+.btn-info-light.disabled:focus,
+.btn-info-light.disabled:hover,
+.btn-info-light[disabled],
+.btn-info-light[disabled].active,
+.btn-info-light[disabled].hover,
+.btn-info-light[disabled]:active,
+.btn-info-light[disabled]:focus,
+.btn-info-light[disabled]:hover,
+fieldset[disabled] .btn-info-light,
+fieldset[disabled] .btn-info-light.active,
+fieldset[disabled] .btn-info-light.hover,
+fieldset[disabled] .btn-info-light:active,
+fieldset[disabled] .btn-info-light:focus,
+fieldset[disabled] .btn-info-light:hover {
+    background-color: $info-light-bg;
+    border-color: $info-light-border;
+}
+
+.btn-info-light .badge {
+    color: $info-light;
+    background-color: $info-light-bg;
+}
+
+// =======================================================
+// 深色底按鈕
+// =======================================================
+.btn-inverse {
+    color: $inverse;
+    background-color: $inverse-bg;
+}
+
+.btn-inverse.active,
+.btn-inverse.hover,
+.btn-inverse:active,
+.btn-inverse:focus,
+.btn-inverse:hover,
+.open>.dropdown-toggle.btn-inverse {
+    color: $inverse;
+    background-color: $inverse-bg;
+    border-color: $inverse-border;
+}
+
+.btn-inverse.active,
+.btn-inverse:active,
+.open>.dropdown-toggle.btn-inverse {
+    background: $inverse-bg;
+    border-color: $inverse-border;
+}
+
+.btn-inverse.disabled,
+.btn-inverse.disabled.active,
+.btn-inverse.disabled.hover,
+.btn-inverse.disabled:active,
+.btn-inverse.disabled:focus,
+.btn-inverse.disabled:hover,
+.btn-inverse[disabled],
+.btn-inverse[disabled].active,
+.btn-inverse[disabled].hover,
+.btn-inverse[disabled]:active,
+.btn-inverse[disabled]:focus,
+.btn-inverse[disabled]:hover,
+fieldset[disabled] .btn-inverse,
+fieldset[disabled] .btn-inverse.active,
+fieldset[disabled] .btn-inverse.hover,
+fieldset[disabled] .btn-inverse:active,
+fieldset[disabled] .btn-inverse:focus,
+fieldset[disabled] .btn-inverse:hover {
+    background-color: $inverse;
+    border-color: $inverse-border;
+}
+
+.btn-inverse .badge {
+    color: $inverse;
+    background-color: $inverse-bg;
+}
+
+.btn-danger {
+    color: #ffffff;
+    background-color: #e74c3c;
+}
+
+.btn-danger.active,
+.btn-danger.hover,
+.btn-danger:active,
+.btn-danger:focus,
+.btn-danger:hover,
+.open>.dropdown-toggle.btn-danger {
+    color: #ffffff;
+    background-color: #ec7063;
+    border-color: #ec7063;
+}
+
+.btn-danger.active,
+.btn-danger:active,
+.open>.dropdown-toggle.btn-danger {
+    background: #c44133;
+    border-color: #c44133;
+}
+
+.btn-danger.disabled,
+.btn-danger.disabled.active,
+.btn-danger.disabled.hover,
+.btn-danger.disabled:active,
+.btn-danger.disabled:focus,
+.btn-danger.disabled:hover,
+.btn-danger[disabled],
+.btn-danger[disabled].active,
+.btn-danger[disabled].hover,
+.btn-danger[disabled]:active,
+.btn-danger[disabled]:focus,
+.btn-danger[disabled]:hover,
+fieldset[disabled] .btn-danger,
+fieldset[disabled] .btn-danger.active,
+fieldset[disabled] .btn-danger.hover,
+fieldset[disabled] .btn-danger:active,
+fieldset[disabled] .btn-danger:focus,
+fieldset[disabled] .btn-danger:hover {
+    background-color: #bdc3c7;
+    border-color: #e74c3c;
+}
+
+.btn-danger .badge {
+    color: #e74c3c;
+    background-color: #ffffff;
+}
+
+.btn-success {
+    color: #ffffff;
+    background-color: #2ecc71;
+}
+
+.btn-success.active,
+.btn-success.hover,
+.btn-success:active,
+.btn-success:focus,
+.btn-success:hover,
+.open>.dropdown-toggle.btn-success {
+    color: #ffffff;
+    background-color: #58d68d;
+    border-color: #58d68d;
+}
+
+.btn-success.active,
+.btn-success:active,
+.open>.dropdown-toggle.btn-success {
+    background: #27ad60;
+    border-color: #27ad60;
+}
+
+.btn-success.disabled,
+.btn-success.disabled.active,
+.btn-success.disabled.hover,
+.btn-success.disabled:active,
+.btn-success.disabled:focus,
+.btn-success.disabled:hover,
+.btn-success[disabled],
+.btn-success[disabled].active,
+.btn-success[disabled].hover,
+.btn-success[disabled]:active,
+.btn-success[disabled]:focus,
+.btn-success[disabled]:hover,
+fieldset[disabled] .btn-success,
+fieldset[disabled] .btn-success.active,
+fieldset[disabled] .btn-success.hover,
+fieldset[disabled] .btn-success:active,
+fieldset[disabled] .btn-success:focus,
+fieldset[disabled] .btn-success:hover {
+    background-color: #bdc3c7;
+    border-color: #2ecc71;
+}
+
+.btn-success .badge {
+    color: #2ecc71;
+    background-color: #ffffff;
+}
+
+.btn-warning {
+    color: #ffffff;
+    background-color: #f1c40f;
+}
+
+.btn-warning.active,
+.btn-warning.hover,
+.btn-warning:active,
+.btn-warning:focus,
+.btn-warning:hover,
+.open>.dropdown-toggle.btn-warning {
+    color: #ffffff;
+    background-color: #f4d313;
+    border-color: #f4d313;
+}
+
+.btn-warning.active,
+.btn-warning:active,
+.open>.dropdown-toggle.btn-warning {
+    background: #cda70d;
+    border-color: #cda70d;
+}
+
+.btn-warning.disabled,
+.btn-warning.disabled.active,
+.btn-warning.disabled.hover,
+.btn-warning.disabled:active,
+.btn-warning.disabled:focus,
+.btn-warning.disabled:hover,
+.btn-warning[disabled],
+.btn-warning[disabled].active,
+.btn-warning[disabled].hover,
+.btn-warning[disabled]:active,
+.btn-warning[disabled]:focus,
+.btn-warning[disabled]:hover,
+fieldset[disabled] .btn-warning,
+fieldset[disabled] .btn-warning.active,
+fieldset[disabled] .btn-warning.hover,
+fieldset[disabled] .btn-warning:active,
+fieldset[disabled] .btn-warning:focus,
+fieldset[disabled] .btn-warning:hover {
+    background-color: #bdc3c7;
+    border-color: #f1c40f;
+}
+
+.btn-warning .badge {
+    color: #f1c40f;
+    background-color: #ffffff;
+}
+
+.btn-embossed {
+    box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.15);
+}
+
+.btn-embossed.active,
+.btn-embossed:active {
+    box-shadow: inset 0 2px 0 rgba(0, 0, 0, 0.15);
+}
+
+.btn-wide {
+    min-width: 140px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+// 一般連結
+.btn-link {
+    color: $primary-color;
+}
+
+.btn-link:focus,
+.btn-link:hover {
+    color: $primary-darken;
+    text-decoration: underline;
+    background-color: transparent;
+}
+
+.btn-link[disabled]:focus,
+.btn-link[disabled]:hover,
+fieldset[disabled] .btn-link:focus,
+fieldset[disabled] .btn-link:hover {
+    color: #bdc3c7;
+    text-decoration: none;
+}
+
+.btn-group-hg>.btn,
+.btn-hg {
+    padding: 6px 20px;
+    font-size: 22px;
+    line-height: 1.227;
+    border-radius: 3px;
+}
+
+.btn-group-lg>.btn,
+.btn-lg {
+    padding: 3px 25px;
+    font-size: 18px;
+    line-height: 1.471;
+    border-radius: 3px;
+}
+
+.btn-group-md>.btn,
+.btn-md {
+    padding: 6px 35px;
+    font-size: 14px;
+    line-height: 1.471;
+    border-radius: 3px;
+}
+
+.btn-group-sm>.btn,
+.btn-sm {
+    padding: 5px 13px;
+    font-size: 13px;
+    line-height: 1.385;
+    border-radius: 3px;
+}
+
+.btn-group-xs>.btn,
+.btn-xs {
+    padding: 5px 9px;
+    font-size: 12px;
+    line-height: 1.083;
+    border-radius: 3px;
+}
+
+.btn-tip {
+    font-weight: 300;
+    padding-left: 10px;
+    font-size: 92%;
+}
+
+.btn-block {
+    white-space: normal;
+}
+
+// =========================================
+// 按鈕形式
+// =========================================
+// 單Icon式按鈕
+.button--xs {
+    width: 14px;
+    height: 14px;
+    .icon {
+        width: 8px;
+        height: 8px;
+    }
+}
+
+.button--smaller {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 3px;
+    .icon {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.button--small {
+    width: 30px;
+    height: 30px;
+    .icon {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+// 按鈕群組
+.buttonGroup {
+    display: inline-block;
+    .button--small {
+        margin: 0 5px;
+        display: inline-block;
+        vertical-align: middle;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    .button--middle {
+        margin: 0 5px;
+        display: inline-block;
+        vertical-align: middle;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    .button--large {
+        margin: 0 5px;
+        display: inline-block;
+        vertical-align: middle;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+// 圖示＋文字
+.buttonwithLabel {
+    // 中型圖示
+    .button--middle {
+        margin-right: 10px;
+        width: auto;
+        .icon {
+            width: 25px;
+            height: 20px;
+        }
+        .buttonLabel {
+            font-size: 18px;
+            color: #757575;
+            margin: 0 0 0 5px;
+            &.is-red {
+                color: #C82639;
+                font-size: 16px;
+                margin: 0;
+            }
+        }
+    }
+    // 小型圖示
+    .button--small {
+        margin-right: 10px;
+        width: auto;
+        .icon {
+            width: 18px;
+            height: 18px;
+        }
+        .buttonLabel {
+            font-size: 14px;
+            color: #757575;
+            margin: 0 0 0 2px;
+            &.is-red {
+                color: #C82639;
+                font-size: 14px;
+                margin: 0;
+            }
+        }
+    }
+}
+
+// =========================================
+// 連結樣式
+// =========================================
+.inline-list {
+    li {
+        list-style: none;
+        margin-right: 10px;
+        float: left;
+    }
+}
+
+.inline-list--footer {
+    li {
+        margin-right: 20px;
+        font-size: 14px;
+    }
+}
