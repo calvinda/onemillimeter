@@ -22,7 +22,7 @@
         float: right;
        li{
         float: left;
-        margin-right: 45px;
+        margin: 0 35px;
         font-size: 20px;
         margin-top: 6px;
        }
@@ -30,7 +30,7 @@
 }
 
 
-.section-hero{
+.heroSection{
     background: transparent url(../images/hero-section-bg.jpg)no-repeat 0 0;
     background-size: cover;
     min-height: 100vh;
@@ -82,4 +82,11 @@
     
 
     
+}
+
+.introductionSection{
+  background: transparent url(../images/section-2-bg.jpg)no-repeat 0 0;
+  background-size: cover;
+  min-height: 100vh;
+  text-align: center;
 }
