@@ -54,7 +54,10 @@ button {
     background: transparent;
 }
 a{
-    color: #4A4A4A;
+    color: #555;
+    &:hover{
+        color:black;
+    }
 }
 a:hover{
 	cursor: pointer;

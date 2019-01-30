@@ -51,7 +51,9 @@ button {
   background: transparent; }
 
 a {
-  color: #4A4A4A; }
+  color: #555; }
+  a:hover {
+    color: black; }
 
 a:hover {
   cursor: pointer;
@@ -644,6 +646,10 @@ fieldset[disabled] .btn-link:hover {
   text-decoration: none;
   color: black;
   margin-left: 15px; }
+  @media (max-width: 767px ) {
+    .brand-logo {
+      font-size: 24px;
+      margin: 0; } }
 
 .main-menu {
   background-color: white;
@@ -661,6 +667,11 @@ fieldset[disabled] .btn-link:hover {
   -webkit-transition-timing-function: ease-in-out;
        -o-transition-timing-function: ease-in-out;
           transition-timing-function: ease-in-out; }
+  @media (max-width: 767px ) {
+    .main-menu {
+      padding: 10px 10px 7px 0;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.9); } }
   .main-menu .menu-list {
     float: right; }
     .main-menu .menu-list li {
@@ -671,6 +682,31 @@ fieldset[disabled] .btn-link:hover {
       .main-menu .menu-list li .active {
         color: black;
         font-weight: bold; }
+    @media (max-width: 767px ) {
+      .main-menu .menu-list {
+        float: none;
+        margin: 7px 0 0 16px; }
+        .main-menu .menu-list li {
+          font-size: 16px;
+          margin: 0 20px 0 0;
+          float: none;
+          display: inline; } }
+
+.mobile-menu-icon {
+  font-size: 25px;
+  float: right;
+  position: relative;
+  top: 5px;
+  right: 24px; }
+
+.mobile-menu {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.8);
+  right: 0;
+  left: 0;
+  top: 64px;
+  bottom: 0;
+  z-index: 99999; }
 
 .hide-menu {
   opacity: 0;
@@ -693,6 +729,10 @@ fieldset[disabled] .btn-link:hover {
   .heroSection .large-logo {
     max-width: 53%;
     opacity: 0.8; }
+    @media (min-width: 768px) and (max-width:991px) {
+      .heroSection .large-logo {
+        max-width: 80%;
+        margin-top: 10%; } }
     @media (max-width: 767px ) {
       .heroSection .large-logo {
         max-width: 80%;
@@ -744,6 +784,9 @@ fieldset[disabled] .btn-link:hover {
   min-height: 100vh;
   text-align: center;
   padding: 40px 20px; }
+  @media (min-width: 768px) and (max-width:991px) {
+    .introductionSection {
+      background-position: 23%; } }
   @media (max-width: 767px ) {
     .introductionSection {
       background-position: 17%;
@@ -758,7 +801,7 @@ fieldset[disabled] .btn-link:hover {
     line-height: 30px; }
     @media (min-width: 1200px) {
       .introductionSection .contant {
-        margin-left: 236px;
+        margin-left: 70px;
         max-width: 360px; } }
     @media (min-width: 992px) and (max-width:1199px) {
       .introductionSection .contant {
@@ -776,6 +819,9 @@ fieldset[disabled] .btn-link:hover {
   background-size: cover;
   min-height: 500px;
   text-align: center; }
+  @media (min-width: 768px) and (max-width:991px) {
+    .projectSection {
+      background-position: 72%; } }
   .projectSection .projects {
     display: -webkit-box;
     display: -webkit-flex;
@@ -799,6 +845,17 @@ fieldset[disabled] .btn-link:hover {
               justify-content: space-around;
       width: 100%;
       margin-bottom: 10%; }
+      @media (min-width: 768px) and (max-width:991px) {
+        .projectSection .projects ul {
+          -webkit-flex-wrap: wrap;
+              -ms-flex-wrap: wrap;
+                  flex-wrap: wrap; } }
+      @media (max-width: 767px ) {
+        .projectSection .projects ul {
+          -webkit-flex-wrap: wrap;
+              -ms-flex-wrap: wrap;
+                  flex-wrap: wrap;
+          margin-bottom: 0; } }
       .projectSection .projects ul li {
         display: -webkit-inline-box;
         display: -webkit-inline-flex;
@@ -812,7 +869,13 @@ fieldset[disabled] .btn-link:hover {
         -webkit-justify-content: center;
             -ms-flex-pack: center;
                 justify-content: center; }
-        .projectSection .projects ul li span {
+        @media (min-width: 768px) and (max-width:991px) {
+          .projectSection .projects ul li {
+            margin: 25px; } }
+        @media (max-width: 767px ) {
+          .projectSection .projects ul li {
+            margin: 15px 0; } }
+        .projectSection .projects ul li .project-title {
           display: -webkit-inline-box;
           display: -webkit-inline-flex;
           display: -ms-inline-flexbox;
@@ -849,6 +912,10 @@ fieldset[disabled] .btn-link:hover {
         -webkit-transition-timing-function: ease-in-out;
              -o-transition-timing-function: ease-in-out;
                 transition-timing-function: ease-in-out; }
+      @media (max-width: 767px ) {
+        .projectSection .projects .project-cover {
+          width: 165px;
+          height: 165px; } }
       .projectSection .projects .project-cover.shanghai {
         border: 1px solid #73FDEA; }
       .projectSection .projects .project-cover.bangkook {
@@ -865,3 +932,84 @@ fieldset[disabled] .btn-link:hover {
         border: 1px solid #00A2FF; }
       .projectSection .projects .project-cover.beijin {
         border: 1px solid #EE220C; }
+
+.lb-nav a.lb-next, .lb-nav a.lb-prev {
+  opacity: 1 !important; }
+  @media (max-width: 767px ) {
+    .lb-nav a.lb-next, .lb-nav a.lb-prev {
+      background-size: 30px; } }
+
+.lb-data .lb-caption {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 29px;
+  color: white; }
+
+.networkSection {
+  min-height: 500px;
+  background: white url("../images/worldmap.png") no-repeat 0 0;
+  background-position: 20px 140px;
+  background-size: 70%; }
+  @media (min-width: 992px) and (max-width:1199px) {
+    .networkSection {
+      background-position: -150px 120px;
+      background-size: 65%; } }
+  @media (min-width: 768px) and (max-width:991px) {
+    .networkSection {
+      background-position: -298px 25px;
+      background-size: contain; } }
+  @media (max-width: 767px ) {
+    .networkSection {
+      background-position: -410px -7px;
+      background-size: 812px; } }
+  .networkSection .networkInfo {
+    max-width: 400px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin: 10% 60px 0 0;
+    float: right; }
+    @media (min-width: 768px) and (max-width:991px) {
+      .networkSection .networkInfo {
+        margin: 13% 41px 0 0; } }
+    @media (max-width: 767px ) {
+      .networkSection .networkInfo {
+        max-width: 100%;
+        float: none;
+        margin: 550px auto 10%;
+        padding: 37px; } }
+    .networkSection .networkInfo .info-list {
+      margin-bottom: 20px; }
+      .networkSection .networkInfo .info-list dt {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 10px; }
+      .networkSection .networkInfo .info-list dd {
+        font-size: 16px;
+        line-height: 21px;
+        letter-spacing: 0; }
+      .networkSection .networkInfo .info-list:nth-child(odd) {
+        text-align: right; }
+      @media (max-width: 767px ) {
+        .networkSection .networkInfo .info-list {
+          display: inline-block;
+          width: 100%; } }
+
+footer {
+  background-color: white;
+  min-height: 50px;
+  padding: 60px 0; }
+  footer .footer-menu {
+    text-align: center;
+    margin-bottom: 30px; }
+    footer .footer-menu a {
+      font-size: 16px;
+      margin: 0 25px; }
