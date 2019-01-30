@@ -110,13 +110,13 @@
         margin-top: 40px;
         line-height: 30px;
         @media(--l-desktop) {
-            margin-left: 10px;
+            margin-left: 236px;
             max-width: 360px;
         }
         @media(--desktop) {
-          margin-left: 139px;
-          max-width: 360px;
-      }
+            margin-left: 139px;
+            max-width: 360px;
+        }
         @media(--mobile) {
             max-width: 100%;
             text-align: left;
@@ -129,21 +129,72 @@
 .projectSection {
     background: transparent url(../images/section-3-bg.jpg)no-repeat 0 0;
     background-size: cover;
-    min-height: 100vh;
+    min-height: 500px;
     text-align: center;
-
-    .projects{
-
-      .project-cover{
-        width: 150px;
-        height: 150px;
-        display: inline-flex;
-        background-size: cover;
-        background-repeat: no-repeat;
-        
-        span{
-          display: inline-flex;
+    .projects {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 15% 0;
+        ul {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            margin-bottom: 10%;
+            li {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                span {
+                    display: inline-flex;
+                    font-size: 25px;
+                    color: white;
+                    position: absolute;
+                    z-index: 10;
+                    font-weight: bold;
+                    cursor: pointer;
+                }
+            }
         }
-      }
+        .project-cover {
+            width: 230px;
+            height: 230px;
+            display: inline-flex;
+            background-size: cover;
+            background-repeat: no-repeat;
+            filter: brightness(0.8);
+            transition: all 0.3s;
+            transition-timing-function: ease-in-out;
+            &:hover {
+                filter: brightness(1);
+                transition: all 0.3s;
+                transition-timing-function: ease-in-out;
+            }
+
+            &.shanghai{
+                border:1px solid #73FDEA;
+            }
+            &.bangkook{
+                border:1px solid #FF9300;
+            }
+            &.tokyo{
+                border:1px solid #EF5FA7;
+            }
+            &.singapore{
+                border:1px solid #FF9300;
+            }
+            &.hongkong{
+                border:1px solid #ffffff;
+            }
+            &.osaka{
+                border:1px solid #FFFC66;
+            }
+            &.chengdu{
+                border:1px solid #00A2FF;
+            }
+            &.beijin{
+                border:1px solid #EE220C;
+            }
+        }
     }
 }
