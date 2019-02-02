@@ -82,6 +82,9 @@
     min-height: 100vh;
     text-align: center;
     padding: 40px 20px;
+    @media(min-width: 1280px) and (max-width: 1366px) {
+        background-size: contain;
+    }
     @media(--mobile) {
         background-position: 68%;
     }
@@ -155,22 +158,26 @@
     .contant {
         color: white;
         max-width: 380px;
-        font-size: 22px;
+        font-size: 20px;
         text-align: left;
         margin-left: 15%;
         margin-top: 40px;
         line-height: 30px;
         text-shadow: 0px 2px 7px #000000;
+        span{
+            margin-bottom: 15px;
+            display: inline-block;
+        }
         @media(--l-desktop) {
             margin-left: 14%;
-            max-width: 400px;
+            max-width: 380px;
             margin-top: 12%;
         }
         @media(min-width: 1300px) and (max-width: 1366px) {
             margin-left: 144px;
             margin-top: 152px;
-            font-size: 22px;
-            line-height: 26px;
+            font-size: 20px;
+            line-height: 23px;
         }
         @media(--desktop) {
             margin-left: 210px;
@@ -236,15 +243,6 @@
                 @media(--mobile) {
                     margin: 15px 0;
                 }
-                .project-title {
-                    display: inline-flex;
-                    font-size: 25px;
-                    color: white;
-                    position: absolute;
-                    z-index: 10;
-                    font-weight: bold;
-                    cursor: pointer;
-                }
             }
         }
         .project-cover {
@@ -253,14 +251,19 @@
             display: inline-flex;
             background-size: cover;
             background-repeat: no-repeat;
-            filter: brightness(0.8);
-            transition: all 0.3s;
-            transition-timing-function: ease-in-out;
-            &:hover {
-                filter: brightness(1);
-                transition: all 0.3s;
-                transition-timing-function: ease-in-out;
+            cursor: pointer;
+
+            span {
+                display: inline-flex;
+                font-size: 25px;
+                color: white;
+                z-index: 10;
+                font-weight: bold;
+                cursor: pointer;
+                margin: 37% auto;
+                text-shadow: 0px 2px 7px rgba(0, 0, 0, 0.5);
             }
+
             @media(min-width: 1300px) and (max-width: 1366px) {
                 width: 200px;
                 height: 200px;
