@@ -728,7 +728,10 @@ fieldset[disabled] .btn-link:hover {
       background-position: 68%; } }
   .heroSection .large-logo {
     max-width: 53%;
-    opacity: 0.8; }
+    opacity: 0.9; }
+    @media (min-width: 1700px) {
+      .heroSection .large-logo {
+        max-width: 45%; } }
     @media (min-width: 1280px) and (max-width: 1366px) {
       .heroSection .large-logo {
         max-width: 45%; } }
@@ -739,7 +742,7 @@ fieldset[disabled] .btn-link:hover {
     @media (max-width: 767px ) {
       .heroSection .large-logo {
         max-width: 80%;
-        opacity: 0.8;
+        opacity: 0.9;
         margin-top: 30%; } }
 
 @-webkit-keyframes bounce {
@@ -804,20 +807,36 @@ fieldset[disabled] .btn-link:hover {
     margin-top: 40px;
     line-height: 30px;
     text-shadow: 0px 2px 7px #000000; }
-    @media (min-width: 1200px) {
+    @media (min-width: 1200px) and (max-width:1699px) {
       .introductionSection .contant {
-        margin-left: 70px;
-        max-width: 360px; } }
+        margin-left: 14%;
+        max-width: 400px;
+        margin-top: 12%; } }
+    @media (min-width: 1300px) and (max-width: 1366px) {
+      .introductionSection .contant {
+        margin-left: 144px;
+        margin-top: 152px;
+        font-size: 22px;
+        line-height: 26px; } }
     @media (min-width: 992px) and (max-width:1199px) {
       .introductionSection .contant {
-        margin-left: 139px;
-        max-width: 360px; } }
-    @media (max-width: 767px ) {
-      .introductionSection .contant {
-        max-width: 100%;
-        text-align: left;
-        margin-left: auto;
-        margin-top: 45px; } }
+        margin-left: 210px;
+        max-width: 360px;
+        margin-top: 150px; } }
+  @media (min-width: 768px) and (max-width:991px) {
+    .introductionSection {
+      margin-left: 139px;
+      max-width: 410px;
+      margin-left: 6%;
+      margin-top: 97px;
+      font-size: 27px;
+      line-height: 32px; } }
+  @media (max-width: 767px ) {
+    .introductionSection {
+      max-width: 100%;
+      text-align: left;
+      margin-left: auto;
+      margin-top: 45px; } }
 
 .projectSection {
   background: transparent url(../images/section-3-bg.jpg) no-repeat 0 0;
@@ -840,6 +859,10 @@ fieldset[disabled] .btn-link:hover {
         -ms-flex-align: center;
             align-items: center;
     margin: 15% 0; }
+    @media (min-width: 1300px) and (max-width: 1366px) {
+      .projectSection .projects {
+        margin: 10% 0;
+        margin-bottom: 5%; } }
     .projectSection .projects ul {
       display: -webkit-box;
       display: -webkit-flex;
@@ -849,7 +872,7 @@ fieldset[disabled] .btn-link:hover {
           -ms-flex-pack: distribute;
               justify-content: space-around;
       width: 100%;
-      margin-bottom: 10%; }
+      margin-bottom: 5%; }
       @media (min-width: 768px) and (max-width:991px) {
         .projectSection .projects ul {
           -webkit-flex-wrap: wrap;
@@ -917,6 +940,10 @@ fieldset[disabled] .btn-link:hover {
         -webkit-transition-timing-function: ease-in-out;
              -o-transition-timing-function: ease-in-out;
                 transition-timing-function: ease-in-out; }
+      @media (min-width: 1300px) and (max-width: 1366px) {
+        .projectSection .projects .project-cover {
+          width: 200px;
+          height: 200px; } }
       @media (max-width: 767px ) {
         .projectSection .projects .project-cover {
           width: 165px;
@@ -943,10 +970,12 @@ fieldset[disabled] .btn-link:hover {
         border: 1px solid #EE220C;
         background-position: -56px; }
 
-.lb-nav a.lb-next, .lb-nav a.lb-prev {
+.lb-nav a.lb-next,
+.lb-nav a.lb-prev {
   opacity: 1 !important; }
   @media (max-width: 767px ) {
-    .lb-nav a.lb-next, .lb-nav a.lb-prev {
+    .lb-nav a.lb-next,
+    .lb-nav a.lb-prev {
       background-size: 30px; } }
 
 .lb-data .lb-caption {
@@ -960,12 +989,18 @@ fieldset[disabled] .btn-link:hover {
   background: white url("../images/worldmap.png") no-repeat 0 0;
   background-position: 20px 140px;
   background-size: 70%; }
-  @media (min-width: 1280px) and (max-width: 1366px) {
+  @media (min-width: 1700px) {
     .networkSection {
-      min-height: 800px; } }
+      background-position: 20px 275px;
+      background-size: 52%; } }
+  @media (min-width: 1300px) and (max-width: 1366px) {
+    .networkSection {
+      min-height: 800px;
+      background-position: -5px 103px;
+      background-size: 57%; } }
   @media (min-width: 992px) and (max-width:1199px) {
     .networkSection {
-      background-position: -150px 120px;
+      background-position: -35px 140px;
       background-size: 65%; } }
   @media (min-width: 768px) and (max-width:991px) {
     .networkSection {
@@ -990,9 +1025,12 @@ fieldset[disabled] .btn-link:hover {
             justify-content: flex-end;
     margin: 10% 60px 0 0;
     float: right; }
+    @media (min-width: 1700px) {
+      .networkSection .networkInfo {
+        margin: 20% 100px 0 0; } }
     @media (min-width: 1280px) and (max-width: 1366px) {
       .networkSection .networkInfo {
-        margin: 19% 60px 0 0; } }
+        margin: 10% 110px 0 0; } }
     @media (min-width: 768px) and (max-width:991px) {
       .networkSection .networkInfo {
         margin: 13% 41px 0 0; } }

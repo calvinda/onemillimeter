@@ -15,8 +15,8 @@
 @custom-media --mobile (max-width: 767px );
 @custom-media --pad (min-width: 768px) and (max-width:991px);
 @custom-media --desktop (min-width: 992px) and (max-width:1199px);
-@custom-media --l-desktop (min-width: 1200px);
-
+@custom-media --l-desktop (min-width: 1200px) and (max-width:1699px);;
+@custom-media --x-desktop (min-width: 1700px);
 
 
 // =========================================
