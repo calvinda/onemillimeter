@@ -937,8 +937,8 @@ fieldset[disabled] .btn-link:hover {
           height: 200px; } }
       @media (max-width: 767px ) {
         .projectSection .projects .project-cover {
-          width: 165px;
-          height: 165px; } }
+          width: 150px;
+          height: 150px; } }
       .projectSection .projects .project-cover.shanghai {
         border: 1px solid #73FDEA;
         background-position: -49px; }
