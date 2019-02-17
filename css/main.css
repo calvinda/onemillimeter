@@ -1021,7 +1021,7 @@ fieldset[disabled] .btn-link:hover {
         margin: 20% 100px 0 0; } }
     @media (min-width: 1280px) and (max-width: 1366px) {
       .networkSection .networkInfo {
-        margin: 10% 110px 0 0; } }
+        margin: 10% 50px 0 0; } }
     @media (min-width: 768px) and (max-width:991px) {
       .networkSection .networkInfo {
         margin: 13% 41px 0 0; } }
@@ -1057,4 +1057,4 @@ footer {
     margin-bottom: 30px; }
     footer .footer-menu a {
       font-size: 16px;
-      margin: 0 25px; }
+      margin: 0 18px; }
