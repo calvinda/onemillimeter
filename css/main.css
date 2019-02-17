@@ -810,6 +810,10 @@ fieldset[disabled] .btn-link:hover {
     margin-top: 40px;
     line-height: 30px;
     text-shadow: 0px 2px 7px #000000; }
+    @media (max-width: 767px ) {
+      .introductionSection .contant {
+        margin-left: 0%;
+        line-height: 24px; } }
     .introductionSection .contant span {
       margin-bottom: 15px;
       display: inline-block; }
