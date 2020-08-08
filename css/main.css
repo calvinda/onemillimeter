@@ -858,14 +858,11 @@ fieldset[disabled] .btn-link:hover {
       background-position: 72%; } }
   .projectSection .projects {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-align: center;
-    -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
     margin: 15% 0; }
@@ -875,36 +872,29 @@ fieldset[disabled] .btn-link:hover {
         margin-bottom: 5%; } }
     .projectSection .projects ul {
       display: -webkit-box;
-      display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
-      -webkit-justify-content: space-around;
-          -ms-flex-pack: distribute;
-              justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
       width: 100%;
       margin-bottom: 5%; }
       @media (min-width: 768px) and (max-width:991px) {
         .projectSection .projects ul {
-          -webkit-flex-wrap: wrap;
-              -ms-flex-wrap: wrap;
-                  flex-wrap: wrap; } }
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; } }
       @media (max-width: 767px ) {
         .projectSection .projects ul {
-          -webkit-flex-wrap: wrap;
-              -ms-flex-wrap: wrap;
-                  flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
           margin-bottom: 0; } }
       .projectSection .projects ul li {
         display: -webkit-inline-box;
-        display: -webkit-inline-flex;
         display: -ms-inline-flexbox;
         display: inline-flex;
         -webkit-box-align: center;
-        -webkit-align-items: center;
             -ms-flex-align: center;
                 align-items: center;
         -webkit-box-pack: center;
-        -webkit-justify-content: center;
             -ms-flex-pack: center;
                 justify-content: center; }
         @media (min-width: 768px) and (max-width:991px) {
@@ -917,7 +907,6 @@ fieldset[disabled] .btn-link:hover {
       width: 230px;
       height: 230px;
       display: -webkit-inline-box;
-      display: -webkit-inline-flex;
       display: -ms-inline-flexbox;
       display: inline-flex;
       background-size: cover;
@@ -925,7 +914,6 @@ fieldset[disabled] .btn-link:hover {
       cursor: pointer; }
       .projectSection .projects .project-cover span {
         display: -webkit-inline-box;
-        display: -webkit-inline-flex;
         display: -ms-inline-flexbox;
         display: inline-flex;
         font-size: 25px;
@@ -963,6 +951,12 @@ fieldset[disabled] .btn-link:hover {
         border: 1px solid #00A2FF; }
       .projectSection .projects .project-cover.beijin {
         border: 1px solid #EE220C;
+        background-position: -56px; }
+      .projectSection .projects .project-cover.taipei {
+        border: 1px solid #FFFFFF;
+        background-position: -56px; }
+      .projectSection .projects .project-cover.melbourne {
+        border: 1px solid #0c75ff;
         background-position: -56px; }
 
 .lb-nav a.lb-next,
@@ -1008,14 +1002,11 @@ fieldset[disabled] .btn-link:hover {
   .networkSection .networkInfo {
     max-width: 400px;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-pack: end;
-    -webkit-justify-content: flex-end;
         -ms-flex-pack: end;
             justify-content: flex-end;
     margin: 10% 60px 0 0;
