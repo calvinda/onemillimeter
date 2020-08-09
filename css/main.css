@@ -655,6 +655,8 @@ fieldset[disabled] .btn-link:hover {
   .main-menu a {
     color: black;
     font-size: 16px; }
+    .main-menu a:hover {
+      text-decoration: underline; }
   .main-menu .brand-logo {
     font-weight: bold;
     font-size: 24px;
@@ -663,7 +665,7 @@ fieldset[disabled] .btn-link:hover {
     margin-left: 15px; }
     @media (max-width: 767px ) {
       .main-menu .brand-logo {
-        font-size: 24px;
+        font-size: 20px;
         margin: 0; } }
   .main-menu .menu-list {
     display: -webkit-box;
@@ -685,12 +687,23 @@ fieldset[disabled] .btn-link:hover {
     @media (max-width: 767px ) {
       .main-menu .menu-list {
         float: none;
-        margin: 7px 0 0 16px; }
+        margin: 15px 0 0 0px; }
         .main-menu .menu-list li {
           font-size: 16px;
-          margin: 0 20px 0 0;
+          margin: 0 10px;
           float: none;
           display: inline; } }
+  .main-menu .sns-icon {
+    text-align: right; }
+    .main-menu .sns-icon a {
+      margin: 5px; }
+      .main-menu .sns-icon a img {
+        max-width: 24px; }
+      @media (max-width: 767px ) {
+        .main-menu .sns-icon a {
+          margin: 3px; }
+          .main-menu .sns-icon a img {
+            max-width: 20px; } }
 
 .mobile-menu-icon {
   font-size: 25px;
@@ -717,6 +730,9 @@ fieldset[disabled] .btn-link:hover {
     width: 100%;
     position: relative;
     right: -15px; }
+    @media (min-width: 768px) and (max-width:991px) {
+      .introductionSection .heroimg {
+        right: auto; } }
     @media (max-width: 767px ) {
       .introductionSection .heroimg {
         right: auto; } }
@@ -729,7 +745,11 @@ fieldset[disabled] .btn-link:hover {
       margin-bottom: 20px; }
     @media (min-width: 768px) and (max-width:991px) {
       .introductionSection .contant {
-        font-size: 14px; } }
+        font-size: 14px;
+        padding-left: 0px; } }
+    @media (max-width: 767px ) {
+      .introductionSection .contant {
+        padding-left: 0px; } }
 
 .sourcingSection {
   background-color: #EFF2F4;
@@ -750,6 +770,14 @@ fieldset[disabled] .btn-link:hover {
     font-weight: normal;
     left: 41px;
     font-size: 12px; }
+    @media (min-width: 768px) and (max-width:991px) {
+      .sourcingSection b {
+        position: relative;
+        display: inline-block;
+        left: auto;
+        margin-top: 20px;
+        width: 100%;
+        text-align: center; } }
     @media (max-width: 767px ) {
       .sourcingSection b {
         position: relative;
@@ -803,8 +831,8 @@ fieldset[disabled] .btn-link:hover {
           height: 500px; } }
       @media (min-width: 768px) and (max-width:991px) {
         .projectSection .projects .project-cover {
-          width: 500px;
-          height: 500px; } }
+          width: 330px;
+          height: 330px; } }
       @media (max-width: 767px ) {
         .projectSection .projects .project-cover {
           width: 150px;
@@ -813,7 +841,7 @@ fieldset[disabled] .btn-link:hover {
         display: -webkit-inline-box;
         display: -ms-inline-flexbox;
         display: inline-flex;
-        font-size: 36px;
+        font-size: 46px;
         color: white;
         z-index: 10;
         font-weight: bold;
@@ -826,30 +854,50 @@ fieldset[disabled] .btn-link:hover {
       .projectSection .projects .project-cover.shanghai {
         border: 1px solid #73FDEA;
         background-position: -49px; }
+        .projectSection .projects .project-cover.shanghai:hover span {
+          color: #73FDEA; }
       .projectSection .projects .project-cover.bangkook {
         border: 1px solid #FF9300; }
+        .projectSection .projects .project-cover.bangkook:hover span {
+          color: #FF9300; }
       .projectSection .projects .project-cover.tokyo {
         border: 1px solid #EF5FA7; }
+        .projectSection .projects .project-cover.tokyo:hover span {
+          color: #EF5FA7; }
       .projectSection .projects .project-cover.singapore {
         border: 1px solid #FF9300;
         background-position: -121px; }
+        .projectSection .projects .project-cover.singapore:hover span {
+          color: #FF9300; }
       .projectSection .projects .project-cover.hongkong {
-        border: 1px solid #ffffff;
+        border: 1px solid #73FDEA;
         background-position: -84px; }
+        .projectSection .projects .project-cover.hongkong:hover span {
+          color: #73FDEA; }
       .projectSection .projects .project-cover.osaka {
         border: 1px solid #FFFC66;
         background-position: -70px; }
+        .projectSection .projects .project-cover.osaka:hover span {
+          color: #FFFC66; }
       .projectSection .projects .project-cover.chengdu {
         border: 1px solid #00A2FF; }
+        .projectSection .projects .project-cover.chengdu:hover span {
+          color: #00A2FF; }
       .projectSection .projects .project-cover.beijin {
         border: 1px solid #EE220C;
         background-position: -56px; }
+        .projectSection .projects .project-cover.beijin:hover span {
+          color: #EE220C; }
       .projectSection .projects .project-cover.taipei {
-        border: 1px solid #FFFFFF;
+        border: 1px solid #00A2FF;
         background-position: -56px; }
+        .projectSection .projects .project-cover.taipei:hover span {
+          color: #00A2FF; }
       .projectSection .projects .project-cover.melbourne {
-        border: 1px solid #0c75ff;
+        border: 1px solid #FF968D;
         background-position: -46px; }
+        .projectSection .projects .project-cover.melbourne:hover span {
+          color: #FF968D; }
 
 .lb-nav a.lb-next,
 .lb-nav a.lb-prev {

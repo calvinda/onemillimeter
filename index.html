@@ -45,7 +45,6 @@
                 easing: 'easeInOutCubic',
                 easingcss3: 'ease',
                 slidesNavigation: true,
-                normalScrollElements: '.projectSection',
                 anchors: ['introductionSection', 'projectSection', 'sourcingSection', 'networkSection']
             });
         });
@@ -73,21 +72,31 @@
 
 <body>
     <div id="menu" class="main-menu">
-        <div class="container-fluid sitewidth">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-sm-3">
-                    <a href="#" title="Contact Us">
+                <div class="col-sm-3 col-xs-3">
+                    <a class="hidden-xs" href="mailto:info@onemillimeter.asia" target="_blank" title="Contact Us">
                         Contact Us
                     </a>
+                    <a class="visible-xs-inline" href="mailto:info@onemillimeter.asia" target="_blank" title="Contact Us">
+                        <img style="max-width: 20px;margin-left: 10px;" src="images/contact.svg" alt="Contact Us" />
+                    </a>
                 </div>
-                <div class="col-sm-6 text-center">
+                <div class="col-sm-6 col-xs-6 text-center">
                     <a data-menuanchor="introductionSection" class="brand-logo" href="#introductionSection"
                         title="Onemillimeter">
                         OneMillimeter
                     </a>
                 </div>
-                <div class="col-sm-3">
-
+                <div class="col-sm-3 col-xs-3">
+                    <div class="sns-icon">
+                        <a href="https://www.instagram.com/0nemillimeter/?hl=zh-tw" target="_blank" title="instagram">
+                           <img src="images/instagram.svg" alt="instagram" />
+                        </a>
+                        <a href="https://www.facebook.com/0neMillimeter/?fref=ts" target="_blank" title="facebook">
+                            <img src="images/facebook.svg" alt="facebook" />
+                         </a>
+                    </div>
                 </div>
             </div>
 
@@ -183,6 +192,21 @@
 
                     <div class="row">
                         <div class="col-sm-6">
+                            <a href="images/osaka/cover.jpg" class="project-cover osaka"
+                                style="background-image:url(images/osaka/cover.jpg);" data-lightbox="osaka"
+                                data-title="Louis Vuitton Time Capsule – Nomades Collection / Work <br> Adaptation and Technical Supervision"><span>OSAKA</span></a>
+                            <a class="hide" href="images/osaka/osa1.jpg" data-lightbox="osaka"
+                                data-title="Louis Vuitton Time Capsule – Nomades Collection / Work <br> Adaptation and Technical Supervision">osaka-1</a>
+                            <a class="hide" href="images/osaka/osa2.jpg" data-lightbox="osaka"
+                                data-title="Louis Vuitton Time Capsule – Nomades Collection / Work <br> Adaptation and Technical Supervision">osaka-2</a>
+                            <a class="hide" href="images/osaka/osa3.jpg" data-lightbox="osaka"
+                                data-title="Louis Vuitton Time Capsule – Nomades Collection / Work <br> Adaptation and Technical Supervision">osaka-3</a>
+                            <a class="hide" href="images/osaka/osa5.jpg" data-lightbox="osaka"
+                                data-title="Louis Vuitton Time Capsule – Nomades Collection / Work <br> Adaptation and Technical Supervision">osaka-5</a>
+                            <a class="hide" href="images/osaka/osa6.jpg" data-lightbox="osaka"
+                                data-title="Louis Vuitton Time Capsule – Nomades Collection / Work <br> Adaptation and Technical Supervision">osaka-6</a>
+                        </div>
+                        <div class="col-sm-6">
                             <a href="images/tokyo/cover.jpg" class="project-cover tokyo"
                                 style="background-image:url(images/tokyo/cover.jpg);" data-lightbox="tokyo"
                                 data-title="Perriet-Jouët #EdenTokyo / Auditoire <br> Technical Supervision"><span>TOKYO</span></a>
@@ -197,6 +221,71 @@
                             <a class="hide" href="images/tokyo/tokyo5.jpg" data-lightbox="tokyo"
                                 data-title="Perriet-Jouët #EdenTokyo / Auditoire <br> Technical Supervision">tokyo-5</a>
                         </div>
+                       
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <a href="images/taipei/cover.jpg" class="project-cover taipei"
+                            style="background-image:url(images/taipei/cover.jpg);" data-lightbox="taipei"
+                            data-title="Pernod-Ricard Gala Dinner<br> Local Production"><span>TAIPEI</span></a>
+                        <a class="hide" href="images/taipei/taipei-1.jpg" data-lightbox="taipei"
+                            data-title="Pernod-Ricard Gala Dinner<br> Local Production">taipei-1</a>
+                        <a class="hide" href="images/taipei/taipei-2.jpg" data-lightbox="taipei"
+                            data-title="Pernod-Ricard Gala Dinner<br> Local Production">taipei-2</a>
+                        </div>
+                        <div class="col-sm-6">
+                            <a href="images/melbourne/cover.jpg" class="project-cover melbourne"
+                                style="background-image:url(images/melbourne/cover.jpg);" data-lightbox="melbourne"
+                                data-title="CHANEL J12 Roadshow / K2 Asia <br> Artistic Coordination & Local Production"><span>MELBOURNE</span></a>
+                            <a class="hide" href="images/melbourne/melbourne-1.jpg" data-lightbox="melbourne"
+                                data-title="CHANEL J12 Roadshow / K2 Asia <br> Artistic Coordination & Local Production">melbourne-1</a>
+                            <a class="hide" href="images/melbourne/melbourne-2.jpg" data-lightbox="melbourne"
+                                data-title="CHANEL J12 Roadshow / K2 Asia <br> Artistic Coordination & Local Production">melbourne-2</a>
+                        </div>
+                        
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <a href="images/chengdu/cover.jpg" class="project-cover chengdu"
+                                style="background-image:url(images/chengdu/cover.jpg);" data-lightbox="chengdu"
+                                data-title="Time, A Hermès Object / K2 Asia <br> Set Up Management"><span>CHENGDU</span></a>
+                            <a class="hide" href="images/chengdu/chengdu1.jpg" data-lightbox="chengdu"
+                                data-title="Time, A Hermès Object / K2 Asia <br> Set Up Management">chengdu-1</a>
+                            <a class="hide" href="images/chengdu/chengdu2.jpg" data-lightbox="chengdu"
+                                data-title="Time, A Hermès Object / K2 Asia <br> Set Up Management">chengdu-2</a>
+                            <a class="hide" href="images/chengdu/chengdu3.jpg" data-lightbox="chengdu"
+                                data-title="Louis Vuitton Time Capsule / K2 Asia <br> Technical Direction">chengdu-3</a>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <a href="images/beijin/cover.jpg" class="project-cover beijin"
+                            style="background-image:url(images/beijin/cover.jpg);" data-lightbox="beijin"
+                            data-title="Loro Piana Vicuña Exhibition / Auditoire China <br> Construction Management / Technical Supervision"><span>BEIJING</span></a>
+                        <a class="hide" href="images/beijin/bj1.jpg" data-lightbox="beijin"
+                            data-title="Dior Pop-up Store / SMS <br> Technical Supervision">beijin-1</a>
+                        <a class="hide" href="images/beijin/bj2.jpg" data-lightbox="beijin"
+                            data-title="Dior Pop-up Store / SMS <br> Technical Supervision">beijin-2</a>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <a href="images/hongkong/cover.jpg" class="project-cover hongkong"
+                                style="background-image:url(images/hongkong/cover.jpg);" data-lightbox="hongkong"
+                                data-title="G Givenchy Show / Auditoire China <br> Construction Management / Technical Supervision / Logistics"><span>HONGKONG</span></a>
+                            <a class="hide" href="images/hongkong/hk1.jpg" data-lightbox="hongkong"
+                                data-title="G Givenchy Show / Auditoire China <br> Construction Management / Technical Supervision / Logistics">hongkong1</a>
+                            <a class="hide" href="images/hongkong/hk2.jpg" data-lightbox="hongkong"
+                                data-title="G Givenchy Show / Auditoire China <br> Construction Management / Technical Supervision / Logistics">hongkong2</a>
+                            <a class="hide" href="images/hongkong/hk3.jpg" data-lightbox="hongkong"
+                                data-title="G Givenchy Show / Auditoire China <br> Construction Management / Technical Supervision / Logistics">hongkong2</a>
+                            <a class="hide" href="images/hongkong/hk1.jpg" data-lightbox="hongkong"
+                                data-title="G Givenchy Show / Auditoire China <br> Construction Management / Technical Supervision / Logistics">hongkong4</a>
+                        </div>
+
                         <div class="col-sm-6">
                             <a href="images/singapore/cover.jpg" class="project-cover singapore"
                                 style="background-image:url(images/singapore/cover.jpg);" data-lightbox="singapore"
@@ -214,91 +303,16 @@
                             <a class="hide" href="images/singapore/singapore7.jpg" data-lightbox="singapore"
                                 data-title="CHANEL J12 Roadshow /  K2 Asia <br> Artistic Coordination & Local Production">singapore-6</a>
                         </div>
-                    </div>
 
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <a href="images/melbourne/cover.jpg" class="project-cover melbourne"
-                                style="background-image:url(images/melbourne/cover.jpg);" data-lightbox="melbourne"
-                                data-title="CHANEL J12 Roadshow / K2 Asia <br> Artistic Coordination & Local Production"><span>MELBOURNE</span></a>
-                            <a class="hide" href="images/melbourne/melbourne-1.jpg" data-lightbox="melbourne"
-                                data-title="CHANEL J12 Roadshow / K2 Asia <br> Artistic Coordination & Local Production">melbourne-1</a>
-                            <a class="hide" href="images/melbourne/melbourne-2.jpg" data-lightbox="melbourne"
-                                data-title="CHANEL J12 Roadshow / K2 Asia <br> Artistic Coordination & Local Production">melbourne-2</a>
-                        </div>
-                        <div class="col-sm-6">
-                            <a href="images/hongkong/cover.jpg" class="project-cover hongkong"
-                                style="background-image:url(images/hongkong/cover.jpg);" data-lightbox="hongkong"
-                                data-title="G Givenchy Show / Auditoire China <br> Construction Management / Technical Supervision / Logistics"><span>HONGKONG</span></a>
-                            <a class="hide" href="images/hongkong/hk1.jpg" data-lightbox="hongkong"
-                                data-title="G Givenchy Show / Auditoire China <br> Construction Management / Technical Supervision / Logistics">hongkong1</a>
-                            <a class="hide" href="images/hongkong/hk2.jpg" data-lightbox="hongkong"
-                                data-title="G Givenchy Show / Auditoire China <br> Construction Management / Technical Supervision / Logistics">hongkong2</a>
-                            <a class="hide" href="images/hongkong/hk3.jpg" data-lightbox="hongkong"
-                                data-title="G Givenchy Show / Auditoire China <br> Construction Management / Technical Supervision / Logistics">hongkong2</a>
-                            <a class="hide" href="images/hongkong/hk1.jpg" data-lightbox="hongkong"
-                                data-title="G Givenchy Show / Auditoire China <br> Construction Management / Technical Supervision / Logistics">hongkong4</a>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <a href="images/osaka/cover.jpg" class="project-cover osaka"
-                                style="background-image:url(images/osaka/cover.jpg);" data-lightbox="osaka"
-                                data-title="Louis Vuitton Time Capsule – Nomades Collection / Work <br> Adaptation and Technical Supervision"><span>OSAKA</span></a>
-                            <a class="hide" href="images/osaka/osa1.jpg" data-lightbox="osaka"
-                                data-title="Louis Vuitton Time Capsule – Nomades Collection / Work <br> Adaptation and Technical Supervision">osaka-1</a>
-                            <a class="hide" href="images/osaka/osa2.jpg" data-lightbox="osaka"
-                                data-title="Louis Vuitton Time Capsule – Nomades Collection / Work <br> Adaptation and Technical Supervision">osaka-2</a>
-                            <a class="hide" href="images/osaka/osa3.jpg" data-lightbox="osaka"
-                                data-title="Louis Vuitton Time Capsule – Nomades Collection / Work <br> Adaptation and Technical Supervision">osaka-3</a>
-                            <a class="hide" href="images/osaka/osa5.jpg" data-lightbox="osaka"
-                                data-title="Louis Vuitton Time Capsule – Nomades Collection / Work <br> Adaptation and Technical Supervision">osaka-5</a>
-                            <a class="hide" href="images/osaka/osa6.jpg" data-lightbox="osaka"
-                                data-title="Louis Vuitton Time Capsule – Nomades Collection / Work <br> Adaptation and Technical Supervision">osaka-6</a>
-                        </div>
-                        <div class="col-sm-6">
-                            <a href="images/chengdu/cover.jpg" class="project-cover chengdu"
-                                style="background-image:url(images/chengdu/cover.jpg);" data-lightbox="chengdu"
-                                data-title="Time, A Hermès Object / K2 Asia <br> Set Up Management"><span>CHENGDU</span></a>
-                            <a class="hide" href="images/chengdu/chengdu1.jpg" data-lightbox="chengdu"
-                                data-title="Time, A Hermès Object / K2 Asia <br> Set Up Management">chengdu-1</a>
-                            <a class="hide" href="images/chengdu/chengdu2.jpg" data-lightbox="chengdu"
-                                data-title="Time, A Hermès Object / K2 Asia <br> Set Up Management">chengdu-2</a>
-                            <a class="hide" href="images/chengdu/chengdu3.jpg" data-lightbox="chengdu"
-                                data-title="Louis Vuitton Time Capsule / K2 Asia <br> Technical Direction">chengdu-3</a>
-                        </div>
-                    </div>
-
-
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <a href="images/beijin/cover.jpg" class="project-cover beijin"
-                            style="background-image:url(images/beijin/cover.jpg);" data-lightbox="beijin"
-                            data-title="Loro Piana Vicuña Exhibition / Auditoire China <br> Construction Management / Technical Supervision"><span>BEIJING</span></a>
-                        <a class="hide" href="images/beijin/bj1.jpg" data-lightbox="beijin"
-                            data-title="Dior Pop-up Store / SMS <br> Technical Supervision">beijin-1</a>
-                        <a class="hide" href="images/beijin/bj2.jpg" data-lightbox="beijin"
-                            data-title="Dior Pop-up Store / SMS <br> Technical Supervision">beijin-2</a>
-                        </div>
-                        <div class="col-sm-6">
-                            <a href="images/taipei/cover.jpg" class="project-cover taipei"
-                            style="background-image:url(images/taipei/cover.jpg);" data-lightbox="taipei"
-                            data-title="Pernod-Ricard Gala Dinner<br> Local Production"><span>TAIPEI</span></a>
-                        <a class="hide" href="images/taipei/taipei-1.jpg" data-lightbox="taipei"
-                            data-title="Pernod-Ricard Gala Dinner<br> Local Production">taipei-1</a>
-                        <a class="hide" href="images/taipei/taipei-2.jpg" data-lightbox="taipei"
-                            data-title="Pernod-Ricard Gala Dinner<br> Local Production">taipei-2</a>
-                        </div>
                     </div>
             </div>
         </div>
+    </div>
 
 
 
 
-
-        <div class="sourcingSection section" id="sourcingSection">
+        <div class="sourcingSection section">
             <div class="container-fluid sourcingContent">
 
                 <div class="row">
