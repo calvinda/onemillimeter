@@ -827,8 +827,8 @@ fieldset[disabled] .btn-link:hover {
           height: 500px; } }
       @media (min-width: 992px) and (max-width:1199px) {
         .projectSection .projects .project-cover {
-          width: 500px;
-          height: 500px; } }
+          width: 450px;
+          height: 450px; } }
       @media (min-width: 768px) and (max-width:991px) {
         .projectSection .projects .project-cover {
           width: 330px;
