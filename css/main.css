@@ -642,7 +642,7 @@ fieldset[disabled] .btn-link:hover {
 
 .main-menu {
   background-color: white;
-  padding: 10px;
+  padding: 25px 10px 10px 10px;
   position: fixed;
   top: 0;
   right: 0;
@@ -652,11 +652,17 @@ fieldset[disabled] .btn-link:hover {
   -webkit-transition: top 0.3s;
   -o-transition: top 0.3s;
   transition: top 0.3s; }
+  @media (max-width: 767px ) {
+    .main-menu {
+      padding: 10px; } }
   .main-menu a {
     color: black;
-    font-size: 16px; }
+    font-size: 18px; }
     .main-menu a:hover {
       text-decoration: underline; }
+    @media (max-width: 767px ) {
+      .main-menu a {
+        font-size: 16px; } }
   .main-menu .brand-logo {
     font-weight: bold;
     font-size: 24px;
