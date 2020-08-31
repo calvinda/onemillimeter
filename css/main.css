@@ -745,7 +745,8 @@ fieldset[disabled] .btn-link:hover {
   .introductionSection .contant {
     font-size: 16px;
     padding-left: 20px;
-    letter-spacing: 0; }
+    letter-spacing: 0;
+    font-weight: bold; }
     .introductionSection .contant span {
       display: block;
       margin-bottom: 20px; }
@@ -773,7 +774,7 @@ fieldset[disabled] .btn-link:hover {
   .sourcingSection b {
     position: absolute;
     bottom: 0;
-    font-weight: normal;
+    font-weight: bold;
     left: 41px;
     font-size: 12px; }
     @media (min-width: 768px) and (max-width:991px) {
@@ -791,9 +792,10 @@ fieldset[disabled] .btn-link:hover {
         left: auto;
         margin-top: 20px; } }
   .sourcingSection .contant {
-    font-size: 16px;
+    font-size: 18px;
     padding-left: 20px;
-    letter-spacing: 0; }
+    letter-spacing: 0;
+    font-weight: bold; }
     .sourcingSection .contant span {
       display: block;
       margin-bottom: 20px; }
@@ -813,14 +815,16 @@ fieldset[disabled] .btn-link:hover {
         -ms-flex-pack: center;
             justify-content: center;
     padding-top: 10%; }
+    .projectSection .projects .col-sm-6 {
+      margin: 0 10px; }
     .projectSection .projects .row {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       padding-bottom: 15%; }
     .projectSection .projects .project-cover {
-      width: 600px;
-      height: 600px;
+      width: 550px;
+      height: 550px;
       display: -webkit-inline-box;
       display: -ms-inline-flexbox;
       display: inline-flex;
@@ -859,7 +863,7 @@ fieldset[disabled] .btn-link:hover {
             font-size: 20px; } }
       .projectSection .projects .project-cover.shanghai {
         border: 1px solid #73FDEA;
-        background-position: -49px; }
+        background-position: center; }
         .projectSection .projects .project-cover.shanghai:hover span {
           color: #73FDEA; }
       .projectSection .projects .project-cover.bangkook {
@@ -872,17 +876,17 @@ fieldset[disabled] .btn-link:hover {
           color: #EF5FA7; }
       .projectSection .projects .project-cover.singapore {
         border: 1px solid #FF9300;
-        background-position: -121px; }
+        background-position: center; }
         .projectSection .projects .project-cover.singapore:hover span {
           color: #FF9300; }
       .projectSection .projects .project-cover.hongkong {
         border: 1px solid #73FDEA;
-        background-position: -84px; }
+        background-position: center; }
         .projectSection .projects .project-cover.hongkong:hover span {
           color: #73FDEA; }
       .projectSection .projects .project-cover.osaka {
         border: 1px solid #FFFC66;
-        background-position: -70px; }
+        background-position: center; }
         .projectSection .projects .project-cover.osaka:hover span {
           color: #FFFC66; }
       .projectSection .projects .project-cover.chengdu {
@@ -891,7 +895,7 @@ fieldset[disabled] .btn-link:hover {
           color: #00A2FF; }
       .projectSection .projects .project-cover.beijin {
         border: 1px solid #EE220C;
-        background-position: -56px; }
+        background-position: center; }
         .projectSection .projects .project-cover.beijin:hover span {
           color: #EE220C; }
       .projectSection .projects .project-cover.taipei {
@@ -901,7 +905,7 @@ fieldset[disabled] .btn-link:hover {
           color: #00A2FF; }
       .projectSection .projects .project-cover.melbourne {
         border: 1px solid #FF968D;
-        background-position: -46px; }
+        background-position: center; }
         .projectSection .projects .project-cover.melbourne:hover span {
           color: #FF968D; }
 
@@ -923,14 +927,14 @@ fieldset[disabled] .btn-link:hover {
   min-height: 500px;
   background: #EFF2F4 url("../images/worldmap.png") no-repeat 0 0;
   background-position: 20px 140px;
-  background-size: 70%; }
+  background-size: 52%; }
   @media (min-width: 1700px) {
     .networkSection {
-      background-position: 20px 275px;
+      background-position: 20px 200px;
       background-size: 52%; } }
   @media (min-width: 1300px) and (max-width: 1366px) {
     .networkSection {
-      min-height: 800px;
+      min-height: 500px;
       background-position: -5px 103px;
       background-size: 57%; } }
   @media (min-width: 992px) and (max-width:1199px) {
